@@ -1,0 +1,19 @@
+<mat-card
+  [ngStyle]="{
+    'background-color': enrollee.active ? 'paleturquoise' : 'lightpink'
+  }"
+>
+  <mat-card-title style="text-align: center">
+    <span>{{ enrollee.id }}</span>
+    {{ enrollee.name }}
+  </mat-card-title>
+
+  <button color="accent" (click)="openDialog()" aria-label="update icon">
+    <mat-icon>edit</mat-icon>
+  </button>
+  <mat-card-subtitle>
+    <span>{{ enrollee.dateOfBirth }}</span>
+    <!-- <span class="status__circle" 
+        ></span> -->
+  </mat-card-subtitle>
+</mat-card>
